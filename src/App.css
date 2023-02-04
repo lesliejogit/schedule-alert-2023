@@ -1,0 +1,310 @@
+@media (max-width: 1030px ){ /* For Laptops when resizing screen */
+  .grid--container .event--description {
+    scale: 80%;
+  }
+  .tentativeSchedule--column .event--container div{
+    scale: 60%;
+  }
+
+}
+
+@media(max-width: 750px){ /* For mobile phones */
+  h3{
+    font-size: 6px;
+    min-width: 35px;
+  }
+
+  .grid--container{
+    height: 50px !important;
+    margin: 0px 0px 0px 10px;
+    
+    margin-right: 10px;
+
+    scale: 90%
+
+  }
+  .event--title, .event--time, .event--description{
+    font-size: 4px !important;
+  }
+
+  .event--title{
+    max-height: 50px;
+
+  }
+  .event--location{
+    margin-right: 10px !important;
+  }
+
+
+
+
+   .tentativeSchedule--column .event--location{
+    margin-left: 10px !important;
+    margin-right: 10px;
+  } 
+
+
+  .tentativeSchedule--column .event--container{
+    max-height: 50px;
+  }
+
+  .tentativeSchedule--column .event--time{
+    margin-left:8px;
+  }
+
+  .popup--container{
+    scale: 50% !important;
+  }
+  .popup--container h3{
+    font-size: 20px;
+  }
+
+  .popup--container p{
+    line-height: 30px !important;
+  }
+
+  #modal--container img{
+    scale:30% !important
+  }
+  
+}
+
+@media(max-width: 300px){ /* For galaxy fold :( */
+  .event--description{
+    display: none;
+  }
+
+  .tentativeSchedule--column  .event--location{
+    scale: 50%;
+    margin-left: -5px !important;
+    padding-right: 20px;
+  }
+
+  .grid--container .event--location{
+    margin-left: 30%;
+  }
+
+
+  .popup--container{
+    scale:40% !important
+  }
+
+}
+
+:root {
+  --primary-color: ;
+  --primary-focus: #04121C;
+  --secondary-color: #2047DD;
+  --accent-color: #AC20DD;
+
+  --neutral-focus: #BDDff5;
+  --neutral-content: #A0CFED;
+
+  --base-100: #273642;
+  --base-200: #16232E;
+  --base-300: #04121C;
+}
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #f4f9ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: blue;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+h1 {
+  font-size: clamp(2rem, 1.0000rem + 4.4444vw, 4rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  margin: 0 !important;
+  padding: 0;
+  color: var(--primary-focus);
+}
+
+h2{
+  font-family: "Poppins";
+  color: black
+}
+
+.tentativeSchedule--container .event--container{
+  display: grid !important ; 
+  grid-template-columns: 30% 40% 1fr !important ;
+  
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: 100px;
+
+  /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 15%); */
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;  
+  
+  background-color: #FFFFFF;
+  border-radius: 60px;
+
+  font-size: 15px;
+  color:black
+}
+
+.tentativeSchedule--container .event--container:active{
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.tentativeSchedule--container .event--location{
+  margin:0 10px;
+  max-width: 100px !;
+  padding: 2px;
+}
+
+.event--table{
+  padding: 15px 0px;
+  font-family:"Poppins";
+  
+}
+
+
+.grid--container{
+  display: grid !important ; 
+  grid-template-columns: 1fr 1fr 2fr 1fr !important ;
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: 100px;
+
+  /* box-shadow: 0 4px 8px 0 rgb(0 0 0 / 15%); */
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;;  
+  
+  background-color: #FFFFFF;
+  border-radius: 60px;
+
+  font-size: 15px;
+  color:black
+}
+
+.grid--container:active{
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.grid--container{
+  margin: 0 30px
+}
+
+.grid--container > div {
+  padding: 0px 10px;
+}
+
+.event--title{
+  border-left: solid;
+  border-right: solid;
+  border-width: 2px;
+}
+
+.event--description{
+  text-align: left;
+  max-width: 500px;
+  font-size: 12px;
+}
+
+.event--location{
+  background-color: #bddff5 ;
+  margin-right: 25px;
+  border-radius: 30px;
+}
+
+.tentativeSchedule--container{
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin-top: -30px;
+}
+
+.tentativeSchedule--column{
+  scale: 90%;
+}
+
+.popup--overlay{
+  display: flex;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  height: 100vh;
+  width: 100%;
+
+  background:rgba(0, 0, 0, 0.5); /* Prevents children opacity change, only changes background opacity*/
+
+  justify-content: center;
+  align-items: center;
+}
+
+.popup--container {
+  display:flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 60px;
+  margin: 0 50px;
+
+  padding: 15px 15px;
+  color:black;  
+
+  max-width: 800px;
+  scale: 45%;
+}
+
+.popup--container p{
+  line-height: 40px;
+}
+
+
+.popup--container button{
+
+  color: #E6534E;
+  border:none;
+  background-color: #FFFFFF;
+
+  scale: 45%
+}
+
+.popup--container  button:hover{
+  /* background-color: #bddff5 ; */
+  opacity: .3;
+  cursor:pointer !important
+}
+
+.event--table:hover{
+  opacity: .5;
+  cursor:pointer !important 
+}
+
+#popUpImg{
+  scale: 70%;
+}
+
+
+
+/** For Camrine's CSS */
+#modal--container{
+  margin-top: -80px;
+}
+#modal--container img{
+  scale:50%
+}
+
+#modal--container h3{
+  margin-top: -80px;
+}
+
+
+

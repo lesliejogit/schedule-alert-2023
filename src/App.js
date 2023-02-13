@@ -5,6 +5,7 @@ import scheduleData from "./Components/Data/scheduleData.json"
 import Schedule from './Components/Schedule';
 import PopUp from './Components/PopUp';
 import Footer from './bhComponents/Footer/Footer';
+import Header from './bhComponents/Header/Header';
 
 function App() {
 
@@ -74,6 +75,7 @@ function App() {
     <div className="App">
       <header className="App-header">
       <h1>Schedule Alerts</h1>
+      
       <Schedule 
       workshopSchedule={workshopSchedule} 
       saturdaySchedule={saturdaySchedule}
@@ -86,6 +88,7 @@ function App() {
 
       </header>
       <Footer />
+      <Header />
     </div>
   );
 }
